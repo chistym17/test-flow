@@ -1143,3 +1143,36 @@ html {
   opacity: 1;
   visibility: visible;
 }
+
+/* Zoom Controls */
+.zoom-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+}
+
+.zoom-btn {
+  width: 45px;
+  height: 45px;
+  background: #6b7280;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-btn:hover {
+  background: #4b5563;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(107, 114, 128, 0.4);
+}

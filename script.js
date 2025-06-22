@@ -238,3 +238,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+
+// Zoom functionality
+function zoomIn() {
+  const drawflow = document.getElementById('drawflow');
+  const currentZoom = drawflow.style.transform ? parseFloat(drawflow.style.transform.replace('scale(', '').replace(')', '')) : 1;
+  const newZoom = Math.min(currentZoom * 1.2, 3); // Max zoom 3x
+  drawflow.style.transform = `scale(${newZoom})`;
+}
+
+function zoomOut() {
+  const drawflow = document.getElementById('drawflow');
+  const currentZoom = drawflow.style.transform ? parseFloat(drawflow.style.transform.replace('scale(', '').replace(')', '')) : 1;
+  const newZoom = Math.max(currentZoom / 1.2, 0.3); // Min zoom 0.3x
+  drawflow.style.transform = `scale(${newZoom})`;
+}
