@@ -1034,3 +1034,12 @@ html {
   border: 2px solid #bfc1c7;
   border-radius: 50%;
 }
+
+/* Components Sidebar (moved from left to right) */
+.components-sidebar {
+  width: 280px;
+  background: #1a1a2e;
+  border-left: 1px solid #2d2d44;
+  padding: 24px;
+  box-sizing: border-box;
+}
