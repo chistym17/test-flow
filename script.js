@@ -176,24 +176,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       if (name === "CustomerSupportAgent") {
         html = `
-        <div class="node-body">
-            <div class="csa-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <g>
-                        <rect x="3" y="7" width="18" height="10" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
-                        <circle cx="8.5" cy="12" r="1" fill="currentColor"/>
-                        <circle cx="15.5" cy="12" r="1" fill="currentColor"/>
-                        <rect x="10" y="15" width="4" height="1.5" rx="0.75" fill="currentColor"/>
-                        <rect x="1" y="10" width="2" height="4" rx="1" fill="currentColor"/>
-                        <rect x="21" y="10" width="2" height="4" rx="1" fill="currentColor"/>
-                    </g>
+        <div class="node-body-vertical">
+            <div class="node-icon-vertical">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="#63b3ed"/>
+                    <path d="M12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6ZM12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12Z" fill="#63b3ed"/>
+                    <path d="M12 16C9.33 16 6.5 17.11 6.5 19.5V20H17.5V19.5C17.5 17.11 14.67 16 12 16Z" fill="#63b3ed"/>
                 </svg>
             </div>
-            <div class="csa-text">
-                <div class="node-title">AI Agent</div>
-                <div class="node-subtitle">${template.subtitle}</div>
+            <div class="node-text-vertical">
+                <div class="node-title-vertical">AI Agent</div>
+                <div class="node-subtitle-vertical">${template.subtitle}</div>
             </div>
-            <div class="node-menu">⋯</div>
+            <div class="node-menu-vertical">⋯</div>
         </div>
     `;
       } else if (name === "Embedding") {
