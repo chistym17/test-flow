@@ -26,6 +26,19 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+// Close sidebar when clicking outside
+document.addEventListener('click', function(event) {
+  const sidebar = document.querySelector('.components-sidebar');
+  const toggleButton = document.querySelector('.sidebar-toggle');
+  
+  // Check if sidebar is visible and click is outside sidebar and toggle button
+  if (sidebar.classList.contains('sidebar-visible') && 
+      !sidebar.contains(event.target) && 
+      !toggleButton.contains(event.target)) {
+    closeSidebar();
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function (event) {
   const id = document.getElementById("drawflow");
   const editor = new Drawflow(id);
