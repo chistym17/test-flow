@@ -174,12 +174,21 @@ html {
 }
 
 .component-item {
-  padding: 12px;
-  border-radius: 6px;
+  padding: 20px;
+  border-radius: 8px;
   background: #2d2d44;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   cursor: grab;
   transition: all 0.2s ease;
+  font-size: 16px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.component-item span {
+  font-size: 24px;
 }
 
 .component-item:hover {
@@ -1037,7 +1046,7 @@ html {
 
 /* Components Sidebar (moved from left to right) */
 .components-sidebar {
-  width: 280px;
+  width: 320px;
   background: #1a1a2e;
   border-left: 1px solid #2d2d44;
   padding: 24px;
