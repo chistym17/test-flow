@@ -13,6 +13,14 @@
 </head>
 <body>
     <div class="app-container">
+        <!-- App Logo and Name -->
+        <div class="app-header">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">DotFlow</span>
+            </div>
+        </div>
+
         <!-- Canvas Area -->
         <div class="canvas-area">
             <div id="drawflow"></div>
@@ -20,7 +28,7 @@
 
         <!-- Sidebar Toggle Button -->
         <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-plus"></i>
         </button>
 
         <!-- Overlay for outside clicks -->
@@ -28,10 +36,6 @@
 
         <!-- Sidebar -->
         <div class="components-sidebar sidebar-hidden">
-            <div class="logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">DotFlow</span>
-            </div>
             <div class="sidebar-section">
                 <h3 class="section-title">Components</h3>
                 <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="ChatMessageTrigger">

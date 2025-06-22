@@ -22,6 +22,27 @@ html {
   height: 100%;
 }
 
+/* App Header with Logo */
+.app-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 998;
+}
+
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #8b5cf6;
+}
+
+.app-header .logo-icon {
+  font-size: 24px;
+}
+
 /* Top Navigation */
 .top-nav {
   display: flex;
@@ -1071,14 +1092,14 @@ html {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: #8b5cf6;
+  background: #6b7280;
   border: none;
   border-radius: 50%;
   color: white;
   font-size: 20px;
   cursor: pointer;
   z-index: 999;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
@@ -1086,9 +1107,9 @@ html {
 }
 
 .sidebar-toggle:hover {
-  background: #7c3aed;
+  background: #4b5563;
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 6px 16px rgba(107, 114, 128, 0.4);
 }
 
 /* Sidebar Overlay */
@@ -1098,7 +1119,7 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
