@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotFlow - Rebuilt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow@0.0.59/dist/drawflow.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow@0.0.59/dist/drawflow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="left-sidebar">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">DotFlow</span>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="section-title">Components</h3>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="ChatMessageTrigger">
+                    <span>💬</span> When Chat Message Received
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="Switch">
+                    <span>🔀</span> Switch
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="EditFields">
+                    <span>✏️</span> Edit Fields
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="Filter">
+                    <span>-</span> Filter
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="CustomerSupportAgent">
+                    <span>🤖</span> Customer Support Agent
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="GmailTrigger">
+                    <span>📧</span> Gmail Trigger
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="Embedding">
+                    <span>🧬</span> Embedding
+                </div>
+                <div class="component-item" draggable="true" ondragstart="drag(event)" data-node="VectorStore">
+                    <span>🗄️</span> Vector Store
+                </div>
+            </div>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-area">
+            <div id="drawflow"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
