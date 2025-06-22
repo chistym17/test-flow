@@ -225,9 +225,14 @@ html {
 #drawflow {
   width: 100%;
   height: 100%;
-  background: #0f0f23;
-  background-image: radial-gradient(#2d2d44 1px, transparent 1px);
-  background-size: 40px 40px;
+  background: #374151;
+  background-image: 
+    radial-gradient(circle at 1px 1px, #6b7280 1.5px, transparent 1.5px),
+    radial-gradient(circle at 16px 16px, #9ca3af 1.5px, transparent 1.5px),
+    radial-gradient(circle at 31px 31px, #d1d5db 1.5px, transparent 1.5px);
+  background-size: 30px 30px, 30px 30px, 30px 30px;
+  background-position: 0 0, 15px 15px, 0 0;
+  padding: 60px 0;
 }
 
 /* Drawflow Node Styling */
@@ -238,7 +243,7 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
   padding: 0 !important;
   width: auto !important;
-  min-width: 220px !important;
+  min-width: 280px !important;
 }
 
 .drawflow-node.selected {
@@ -248,33 +253,40 @@ html {
 
 /* Custom Node Content */
 .drawflow-node .drawflow_content_node {
-  padding: 12px;
+  padding: 14px;
 }
 
 .node-body {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .node-icon {
-  width: 32px;
-  height: 32px;
-  font-size: 20px;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
+  border-radius: 8px;
+  color: #63b3ed;
+}
+
+.node-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: #63b3ed;
 }
 
 .node-title {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .node-subtitle {
-  font-size: 12px;
+  font-size: 16px;
   color: #a0aec0;
 }
 
