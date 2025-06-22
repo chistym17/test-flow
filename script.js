@@ -214,13 +214,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         `;
       } else {
         html = `
-                    <div class="node-body">
-                        <div class="node-icon">${template.icon}</div>
-                        <div class="node-text">
-                            <div class="node-title">${template.title}</div>
-                            <div class="node-subtitle">${template.subtitle}</div>
+                    <div class="node-body-vertical">
+                        <div class="node-icon-vertical">${template.icon}</div>
+                        <div class="node-text-vertical">
+                            <div class="node-title-vertical">${template.title}</div>
+                            <div class="node-subtitle-vertical">${template.subtitle}</div>
                         </div>
-                        <div class="node-menu">⋯</div>
+                        <div class="node-menu-vertical">⋯</div>
                     </div>
                 `;
       }
