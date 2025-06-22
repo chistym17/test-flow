@@ -1,3 +1,31 @@
+// Sidebar toggle functionality
+function toggleSidebar() {
+  const sidebar = document.querySelector('.components-sidebar');
+  const overlay = document.querySelector('.sidebar-overlay');
+  
+  if (sidebar.classList.contains('sidebar-visible')) {
+    closeSidebar();
+  } else {
+    sidebar.classList.add('sidebar-visible');
+    overlay.classList.add('overlay-visible');
+  }
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector('.components-sidebar');
+  const overlay = document.querySelector('.sidebar-overlay');
+  
+  sidebar.classList.remove('sidebar-visible');
+  overlay.classList.remove('overlay-visible');
+}
+
+// Close sidebar on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeSidebar();
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function (event) {
   const id = document.getElementById("drawflow");
   const editor = new Drawflow(id);

@@ -18,8 +18,16 @@
             <div id="drawflow"></div>
         </div>
 
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Overlay for outside clicks -->
+        <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+
         <!-- Sidebar -->
-        <div class="components-sidebar">
+        <div class="components-sidebar sidebar-hidden">
             <div class="logo">
                 <span class="logo-icon">⚡</span>
                 <span class="logo-text">DotFlow</span>
